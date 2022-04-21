@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lay_progFood"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:background="@color/grey_700" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_detailFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:background="@drawable/border_linear"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_titleFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="SEE FOOD"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left"
+                android:text="Category"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"
+                android:layout_weight="4"/>
+
+            <TextView
+                android:id="@+id/tv_catFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="-"
+                android:textColor="@color/grey_600"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left"
+                android:text="Area"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"
+                android:layout_weight="4"/>
+
+            <TextView
+                android:id="@+id/tv_areaFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="-"
+                android:textColor="@color/grey_600"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left"
+                android:text="Ingredients"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"
+                android:layout_weight="4"/>
+
+            <TextView
+                android:id="@+id/tv_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="-"
+                android:textColor="@color/orange_700"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left"
+                android:text="Detail Instructions"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_detilInstruct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="fill"
+                android:text="-"
+                android:textColor="@color/grey_600"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/lay_moreYoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:background="@drawable/border_linear"
+            android:backgroundTint="@color/green_500">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="fill"
+                android:text="click this to learn more"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
